@@ -27,11 +27,11 @@
 		<canvas id="watch" width="400" height="400"></canvas>
 	</body>
 	<script>
-		// copied from https://github.com/RaphHaddad/DecimalNow/blob/6232b0ad476020ffc23609830e3b2ef3e1d732bf/ClientApp/app/components/home/home.component.ts#L68
 		function formatDecimalTime(decimalTime) {
 			return decimalTime.hours.toString() + '.' + decimalTime.minutes.toString().padStart(2, '0') + '.' + decimalTime.seconds.toString().padStart(2, '0');
 		}
 
+        // modified from https://github.com/RaphHaddad/DecimalNow/blob/6232b0ad476020ffc23609830e3b2ef3e1d732bf/ClientApp/app/components/home/home.component.ts#L68
 		function getTokanizedTime() {
 			const now = new Date();
 			const decHours = now.getHours() * 5 / 12;
